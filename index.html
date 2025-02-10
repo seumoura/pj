@@ -18,8 +18,8 @@
     document.getElementById('CalculatoraPJ').addEventListener('submit', function(event) {
       event.preventDefault();
       const Valor = parseFloat(document.getElementById('valor').value);
-      const IR =  Valor / 100 * 6;
-      const INSS =  1518 / 100 * 11;
+      const IR =  Valor * 0.06;
+      const INSS =  1518 * 0.011;
       const Contabilizei = 419;
       const Descontos = IR + INSS + Contabilizei;
       const Resultado = Valor - Descontos;
